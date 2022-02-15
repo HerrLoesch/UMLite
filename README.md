@@ -21,7 +21,6 @@ Die wichtigsten Kapitel dieses Dokuments sind [Grundbausteine](#grundbausteine),
 - [Verhaltensdiagramme](#verhaltensdiagramme)
   - [Aktivitätsdiagramm](#aktivitätsdiagramm)
   - [Sequenzdiagramm](#sequenzdiagramm)
-- [# Anmerkungen & Tipps](#-anmerkungen--tipps)
 - [Anmerkungen & Tipps](#anmerkungen--tipps)
 
 # Motivation
@@ -33,7 +32,7 @@ Ziel dieser Seite ist es deshalb, eine vereinfachte Form der UML zu beschreiben 
 - Sie sollte leicht verständlich und schnell zu lernen sein.
 - Sie sollte möglichst mit der UML kompatibel sein.
 
-Außerdem wird darauf geachtet, dass alle Beschreibungen einfachen und damit leicht verständlich sind.
+Außerdem wird darauf geachtet, dass alle Beschreibungen möglichst einfachen und damit leicht verständlich sind.
 
 # Wichtige Darstellungselemente
 
@@ -86,12 +85,9 @@ Nicht jedes Zeichenprogramm bietet die Möglichkeit ein Rechteck wie im Beispiel
 
 # Verhaltensdiagramme
 
-<<<<<<< HEAD
 ## Aktivitätsdiagramm
 
 ## Sequenzdiagramm
 
 # Anmerkungen & Tipps
-=======
-# Anmerkungen & Tipps
->>>>>>> 3e6d0bc20410b14f973e515692e6adac9391292a
+
