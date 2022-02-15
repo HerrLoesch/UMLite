@@ -1,8 +1,4 @@
- 
-
 ![](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)
-
-Dieses Werk ist nach [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) lizensiert.
 
 # Aufbau
 
@@ -25,7 +21,9 @@ Die wichtigsten Kapitel dieses Dokuments sind [Grundbausteine](#grundbausteine),
 - [Verhaltensdiagramme](#verhaltensdiagramme)
   - [Aktivitätsdiagramm](#aktivitätsdiagramm)
   - [Sequenzdiagramm](#sequenzdiagramm)
+- [# Anmerkungen & Tipps](#-anmerkungen--tipps)
 - [Anmerkungen & Tipps](#anmerkungen--tipps)
+
 # Motivation
 
 Die [UML](https://de.wikipedia.org/wiki/Unified_Modeling_Language) (Unified Modeling Language) ist eine weit verbreitete grafische Modellieungssprache die von der [Object Management Group](https://www.omg.org/spec/UML/) entwickelt wurde. Sie wird von vielen Werkzeugen unterstützt und von Softwarearchitekten weltweit genutzt um Softwarestrukturen und deren interne Abläufe näher zu beschreiben. Der größte Vorteil der Sprache ist ihre Standartisierung, der größte Nachteil ihr Umfang. Man kann mit der UML Zusammenhänge sehr detailiert beschreiben, muss aber recht genau wissen wie man dabei vorgeht um nicht ggf. Verwirrung zu stiften.
@@ -88,8 +86,12 @@ Nicht jedes Zeichenprogramm bietet die Möglichkeit ein Rechteck wie im Beispiel
 
 # Verhaltensdiagramme
 
+<<<<<<< HEAD
 ## Aktivitätsdiagramm
 
 ## Sequenzdiagramm
 
 # Anmerkungen & Tipps
+=======
+# Anmerkungen & Tipps
+>>>>>>> 3e6d0bc20410b14f973e515692e6adac9391292a
