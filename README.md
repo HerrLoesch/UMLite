@@ -9,11 +9,7 @@ Die wichtigsten Kapitel dieses Dokuments sind [Grundbausteine](#grundbausteine),
 - [Wichtige Darstellungselemente](#wichtige-darstellungselemente)
   - [Bausteine](#bausteine)
   - [Beziehungen](#beziehungen)
-    - [Verpflichtend](#verpflichtend)
-    - [Optional](#optional)
   - [Kommentare](#kommentare)
-    - [Verpflichtend](#verpflichtend-1)
-    - [Alternative](#alternative)
 - [Strukturdiagramme](#strukturdiagramme)
   - [Komponentendiagramm](#komponentendiagramm)
   - [Klassendiagramm](#klassendiagramm)
@@ -44,7 +40,7 @@ Mit UMLite wollen wir in aller Regel darstellen wie unsere Software aufgebaut is
 Im Beispiel haben wir es mit unterschiedlichen Arten von Bausteinen zu tun. Es gibt beispielsweise die Kaffeemaschine, die ein komplettes System sein kann und es gibt die Komponente Brüheinheit, die in der Kaffeemaschine das Aufbrühen des Kaffees übernimmt. Nähere Erläuterungen zu den Anmerkungen und den unterschiedlichen Arten von Bausteinen finden sich im Kapitel [Strukturdiagramme](#strukturdiagramme).
 
 ## Beziehungen
-### Verpflichtend
+**Verpflichtend**
 
 Bausteine allein machen noch keine Software, sie müssen auch miteinander interagieren. Durch diese Interaktionen ergeben sich Beziehungen zwischen den Bestandteilen. Diese Beziehungen können unterschiedlicher Art sein:
 
@@ -56,7 +52,7 @@ Bausteine allein machen noch keine Software, sie müssen auch miteinander intera
 
 **Funcfact**: Die vielen verschiedenen Arten von Pfeilen in der UML waren einer der Gründe warum UMLite formuliert wurde.
 
-### Optional
+**Optional**
 
 In fast jedem Zeichenprogramm können unterschiedliche Linientypen verwendet werden. UMLite schreibt nicht vor ob nun eine Linie durchgezogen, gestrichelt oder gepunktet ist. Je nach Auswahl können damit aber unterschiedliche Warnehmungen erreicht werden. So sieht man eine durchgezogene Linie viel deutlicher als eine gestrichelte, weshalb sie allgemein als wichtiger wahrgenommen wird.
 
@@ -65,13 +61,15 @@ In fast jedem Zeichenprogramm können unterschiedliche Linientypen verwendet wer
 **Hinweis**: Selbst wenn UMLite keinen Linientyp vorschreibt, so sollte doch darauf geachtet werden, dass in einer Dokumentation immer auch ein gleiches Vorgehen genutzt wird. Daher sollte man sich bewusst entscheiden ob man nun bevorzugt gestrichelte, gepunktete oder durchgezogene Linien verwendet. Im besten Fall nutzt man dabei einfach die Standardeinstellung des verwendeten Zeichenprogramms um sich den Aufwand zu ersparen ständig den Linientyp zu ändern.
 
 ## Kommentare
-### Verpflichtend
+**Verpflichtend**
+
 Kommentare sind keine konkreten Bausteine, sondern erweiterte Beschreibungen. Sie sind in aller Regel gelb eingefärbt und verfügen rechts oben über eine eingeknickte Ecke. Weiterhin werden sie durch eine gerade und gestrichelte Linien mit dem Bestandteil verbunden, den sie näher beschreiben.
 
 ![Kommentare](images/Kommentare.svg)
 
-### Alternative
-Nicht jedes Zeichenprogramm bietet die Möglichkeit ein Rechteck wie im Beispiel zu verwenden. Aus diesem Grund kann man auch auf andere Darstellungsformen ausweichen. Es bietet sich aber an, diese dann immer gelb einzufärben. Sollte man Rechtecke als Kommentare verwenden bietet es sich an die Anmerkung *Kommentar* einzufügen um zu vermeiden, dass sie als Bestandteil missverstanden werden.
+**Alternativ**
+
+Nicht jedes Zeichenprogramm bietet die Möglichkeit ein Rechteck wie im Beispiel zu verwenden. Aus diesem Grund kann man auch auf andere Darstellungsformen ausweichen. Es bietet sich aber an, diese dann immer gelb einzufärben. Sollte man Rechtecke als Kommentare verwenden bietet es sich an die Anmerkung *Kommentar* einzufügen um zu vermeiden, dass sie als Baustein missverstanden werden.
 
 ![Alternative Kommentare](images/Alternativekommentare.svg)
 
