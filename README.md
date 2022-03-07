@@ -1,8 +1,7 @@
 ![](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)
 
 # Aufbau
-
-Die wichtigsten Kapitel dieses Dokuments sind [Grundbausteine](#grundbausteine), [Strukturdiagramme](#strukturdiagramme) und [Verhaltensdiagramme](#verhaltensdiagramme). Im letzten Kapitel wird das Ganze um Anmerkungen und Tipps erweitert, die beim Einsatz von UMLite helfen können. In jedem Kapitel werden zunächst zwingende Festlegungen beschrieben, bevor diese dann um optionale Dinge erweitert werden. Auf diese Weise sollte es möglich sein UMLite leichter in konkreten Situationen und mit unterschiedlichen Werkzeugen zu verwenden.
+Im ersten Kapitel dieses Dokuments wird zunächst erläutert was sich hinter UMLite verbigt. Die wichtigsten Kapitel folgen darauf und sind [Wichtige Darstellungselemente](#wichtige-darstellungselemente), [Strukturdiagramme](#strukturdiagramme) und [Verhaltensdiagramme](#verhaltensdiagramme). Im letzten Kapitel wird das Ganze um Anmerkungen und Tipps erweitert, die beim Einsatz von UMLite helfen können. In jedem Kapitel werden zunächst zwingende Festlegungen beschrieben, bevor diese dann um optionale Dinge erweitert werden. Auf diese Weise sollte es möglich sein UMLite leichter in konkreten Situationen und mit unterschiedlichen Werkzeugen zu verwenden.
 
 - [Aufbau](#aufbau)
 - [Motivation](#motivation)
@@ -21,19 +20,26 @@ Die wichtigsten Kapitel dieses Dokuments sind [Grundbausteine](#grundbausteine),
 
 # Motivation
 
-Die [UML](https://de.wikipedia.org/wiki/Unified_Modeling_Language) (Unified Modeling Language) ist eine weit verbreitete grafische Modellieungssprache die von der [Object Management Group](https://www.omg.org/spec/UML/) entwickelt wurde. Sie wird von vielen Werkzeugen unterstützt und von Softwarearchitekten weltweit genutzt um Softwarestrukturen und deren interne Abläufe näher zu beschreiben. Der größte Vorteil der Sprache ist ihre Standartisierung, der größte Nachteil ihr Umfang. Man kann mit der UML Zusammenhänge sehr detailiert beschreiben, muss aber recht genau wissen wie man dabei vorgeht um nicht ggf. Verwirrung zu stiften.
+Die [UML](https://de.wikipedia.org/wiki/Unified_Modeling_Language) (Unified Modeling Language) ist eine weit verbreitete grafische Modellieungssprache die von der [Object Management Group](https://www.omg.org/spec/UML/) entwickelt wurde. Sie wird von vielen Werkzeugen unterstützt und von Softwarearchitekten weltweit genutzt um Softwarestrukturen und deren interne Abläufe näher zu beschreiben. Der größte Vorteil der Sprache ist ihre Standartisierung, der größte Nachteil ihr Umfang. Man kann mit der UML Zusammenhänge sehr detailiert beschreiben, muss aber recht genau wissen wie man dabei vorgeht um nicht ggf. Verwirrung zu stiften. 
 
-Ziel dieser Seite ist es deshalb, eine vereinfachte Form der UML zu beschreiben die folgende Anforderungen erfüllt:
-- Sie sollte ohne größeren Aufwand mit verschiedenen Zeichenwerkzeugen genutzt werden können.
+Dieser beschriebene Umfang und die Komplexität wird schon sichtbar, wenn man die verschiedenen Diagrammtypen der UML betrachtet (ursprüngliche Quelle: [Wikipedia]()):
+
+![Diagrammarten](images/Diagrammarten.svg)
+
+
+Das Ziel dieser Seite ist es, eine vereinfachte Form der UML zu beschreiben die folgende Anforderungen erfüllt:
 - Sie sollte leicht verständlich und schnell zu lernen sein.
+- Sie sollte ohne größeren Aufwand mit verschiedenen Zeichenwerkzeugen genutzt werden können.
 - Sie sollte möglichst mit der UML kompatibel sein.
 
 Außerdem wird darauf geachtet, dass alle Beschreibungen möglichst einfachen und damit leicht verständlich sind.
 
+Um die Komplexität zu verringern, werden nachfolgend vorallem die Diagramme beschrieben, die am häufigsten in der Praxis anzutreffen sind oder als besonders nützlich gelten. Teilweise findet auch absichtlich eine Vermischung von Diagrammtypen der UML statt.
+
 # Wichtige Darstellungselemente
 
 ## Bausteine
-Mit UMLite wollen wir in aller Regel darstellen wie unsere Software aufgebaut ist und wie ihre einzelnen Bausteine miteinander interagieren. Als Bausteine sehen wir jede Art von Bestandteil den wir näher beschreiben wollen. Bausteine werden dabei als *Rechtecke* dargestellt. Wollen wir sie näher beschreiben haben diese Rechtecke eine Anmerkung die über dem Namen des Bausteins steht und von spitzen Doppelklammern umgeben ist.
+Mit UMLite wird dargestellt wie Software aufgebaut ist und wie ihre einzelnen Bausteine interagieren. Bausteine sind dabei alle Bestandteil die näher beschrieben werden sollen. Sie werden als *Rechtecke* dargestellt. Um sie näher zu beschreiben, können Anmerkungen über dem Namen der Bausteine eingetragen werden. Diese Anmerkungen sind von spitzen Doppelklammern umgeben um sie vom Namen abzuheben.
 
 ![Bestandteile](images/Bausteine.svg)
 
@@ -58,7 +64,7 @@ In fast jedem Zeichenprogramm können unterschiedliche Linientypen verwendet wer
 
 ![Linientypen](images/Linientypen.svg)
 
-**Hinweis**: Selbst wenn UMLite keinen Linientyp vorschreibt, so sollte doch darauf geachtet werden, dass in einer Dokumentation immer auch ein gleiches Vorgehen genutzt wird. Daher sollte man sich bewusst entscheiden ob man nun bevorzugt gestrichelte, gepunktete oder durchgezogene Linien verwendet. Im besten Fall nutzt man dabei einfach die Standardeinstellung des verwendeten Zeichenprogramms um sich den Aufwand zu ersparen ständig den Linientyp zu ändern.
+**Hinweis**: Die UMLite schreibt keine Linientyp vor.Trotzdem sollte doch darauf geachtet werden, dass beim Zeichnen immer auch ein gleiches Vorgehen genutzt wird. Daher sollte man sich bewusst entscheiden ob man nun bevorzugt gestrichelte, gepunktete oder durchgezogene Linien verwendet. Im besten Fall nutzt man einfach die Standardeinstellung des verwendeten Zeichenprogramms.
 
 ## Kommentare
 **Verpflichtend**
@@ -69,7 +75,7 @@ Kommentare sind keine konkreten Bausteine, sondern erweiterte Beschreibungen. Si
 
 **Alternativ**
 
-Nicht jedes Zeichenprogramm bietet die Möglichkeit ein Rechteck wie im Beispiel zu verwenden. Aus diesem Grund kann man auch auf andere Darstellungsformen ausweichen. Es bietet sich aber an, diese dann immer gelb einzufärben. Sollte man Rechtecke als Kommentare verwenden bietet es sich an die Anmerkung *Kommentar* einzufügen um zu vermeiden, dass sie als Baustein missverstanden werden.
+Nicht jedes Zeichenprogramm bietet die Möglichkeit ein Rechteck mit eigeknickter Ecke zu verwenden. Aus diesem Grund kann man auf andere Darstellungsformen ausweichen. Es bietet sich aber an, diese dann immer gelb einzufärben. Sollte man Rechtecke als Kommentare verwenden sollte die Anmerkung *Kommentar* verwenden um Missverständnisse zu vermeiden.
 
 ![Alternative Kommentare](images/Alternativekommentare.svg)
 
