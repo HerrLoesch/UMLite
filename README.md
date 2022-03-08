@@ -20,7 +20,7 @@ Im ersten Kapitel dieses Dokuments wird zunächst erläutert was sich hinter UML
 
 # Motivation
 
-Die [UML](https://de.wikipedia.org/wiki/Unified_Modeling_Language) (Unified Modeling Language) ist eine weit verbreitete grafische Modellieungssprache die von der [Object Management Group](https://www.omg.org/spec/UML/) entwickelt wurde. Sie wird von vielen Werkzeugen unterstützt und von Softwarearchitekten weltweit genutzt um Softwarestrukturen und deren interne Abläufe näher zu beschreiben. Der größte Vorteil der Sprache ist ihre Standartisierung, der größte Nachteil ihr Umfang. Man kann mit der UML Zusammenhänge sehr detailiert beschreiben, muss aber recht genau wissen wie man dabei vorgeht um nicht ggf. Verwirrung zu stiften. 
+Die [UML](https://de.wikipedia.org/wiki/Unified_Modeling_Language) (Unified Modeling Language) ist eine weit verbreitete grafische Modellierungssprache die von der [Object Management Group](https://www.omg.org/spec/UML/) entwickelt wurde. Sie wird von vielen Werkzeugen unterstützt und von Softwarearchitekten weltweit genutzt um Softwarestrukturen und deren interne Abläufe näher zu beschreiben. Der größte Vorteil der Sprache ist ihre Standardisierung, der größte Nachteil ihr Umfang. Man kann mit der UML Zusammenhänge sehr detailliert beschreiben, muss aber recht genau wissen wie man dabei vorgeht um nicht ggf. Verwirrung zu stiften. 
 
 Dieser beschriebene Umfang und die Komplexität wird schon sichtbar, wenn man die verschiedenen Diagrammtypen der UML betrachtet (ursprüngliche Quelle: [Wikipedia]()):
 
@@ -52,7 +52,7 @@ Bausteine allein machen noch keine Software, sie müssen auch miteinander intera
 
 ![Beziehungen](images/Beziehungen.svg)
 
-1. Eine Bezieung die nicht näher beschrieben werden muss, nicht näher beschrieben werden kann oder bei der beide Bestandteile voneinander abhängen, wird als einfacher Strich dargestellt.
+1. Eine Beziehung die nicht näher beschrieben werden muss, nicht näher beschrieben werden kann oder bei der beide Bestandteile voneinander abhängen, wird als einfacher Strich dargestellt.
 2. Ergibt sich aus der Beziehung eine direkte Abhängigkeit eines Bestandteils zu einem anderen, wird dies durch einen **Pfeil mit offener Spitze** dargestellt. Abhängigkeit bedeutet dabei, dass der Bestandteil von dem der Pfeil ausgeht den Bestandteil braucht auf den der Pfeil zeigt.
 3. Die **geschlossene Spitze** ist ein Spezialfall der im Kapitel [Strukturdiagramme](#strukturdiagramme) näher erläutert wird. Er bedeutet, dass der Baustein von dem der Pfeil ausgeht spezialisierter ist, als der auf den der Pfeil zeigt. Umgekehrt ist der Baustein auf den der Pfeil zeigt damit allgemeiner formuliert als der von dem der Pfeil ausgeht.
 
@@ -60,7 +60,7 @@ Bausteine allein machen noch keine Software, sie müssen auch miteinander intera
 
 **Optional**
 
-In fast jedem Zeichenprogramm können unterschiedliche Linientypen verwendet werden. UMLite schreibt nicht vor ob nun eine Linie durchgezogen, gestrichelt oder gepunktet ist. Je nach Auswahl können damit aber unterschiedliche Warnehmungen erreicht werden. So sieht man eine durchgezogene Linie viel deutlicher als eine gestrichelte, weshalb sie allgemein als wichtiger wahrgenommen wird.
+In fast jedem Zeichenprogramm können unterschiedliche Linientypen verwendet werden. UMLite schreibt nicht vor ob nun eine Linie durchgezogen, gestrichelt oder gepunktet ist. Je nach Auswahl können damit aber unterschiedliche Wahrnehmungen erreicht werden. So sieht man eine durchgezogene Linie viel deutlicher als eine gestrichelte, weshalb sie allgemein als wichtiger wahrgenommen wird.
 
 ![Linientypen](images/Linientypen.svg)
 
@@ -80,9 +80,40 @@ Nicht jedes Zeichenprogramm bietet die Möglichkeit ein Rechteck mit eigeknickte
 ![Alternative Kommentare](images/Alternativekommentare.svg)
 
 # Strukturdiagramme
-
+Strukturdiagramme zeigen wie etwas aufgebaut ist. Sie stellen also dar welche Bausteine es gibt, welche Eigenschaften diese haben und welche Beziehungen zwischen ihnen bestehen.
 ## Komponentendiagramm
 
+**Grundsätzlicher Aufbau**
+
+Komponentendiagramme werden immer dann genutzt wenn eine Struktur ohne größere Details dargestellt werden soll. Es geht bei diesen Diagrammen mehr darum die wichtigsten Bestandteile und deren Abhängigkeiten zu erklären, als ihren detailierten Aufbau. In dem Bausteine in einem Komponentendiagramm als *Komponenten*, *Systeme*, *Subsysteme* oder ähnliches bezeichnet werden, wird nur der Hinweis darauf gegeben, dass sie noch feinere Strukturen besitzen, die für die aktuelle Darstellung aber nicht von Bedeutung sind.
+
+![Darstellungselemente eines Komponentendiagramms](images/Komponentendiagramm-Darstellungselemente.svg)
+
+Insofern es möglich ist, kann auf die Anmerkung aber auch verzichtet werden. In diesem Fall sollte das Rechteck aber ein Symbol enthalten, die es als Komponentendarstellung kennzeichnet. Dieses Symbol besteht aus drei übereinander gelegten Rechtecken. Zusätzlich können auch die Abhängigkeiten weiter verfeinert werden, indem die Schnittstellen in *angeboten* und *benötigt* unterschieden werden. Angebotene Schnittstellen werden von einer Komponente zur Verfügung gestellt und können damit von anderen Komponenten genutzt werden. Benötigte Schnittstellen werden wiederum von einer Komponente gebraucht, damit diese ihre eigentliche Aufgabe erfüllen kann. Damit Schnittstellen besser wahrgenommen werden können, sollten diese außerdem über ein Quadrat, den sogenannten *Port*, auf der Seite der Komponente verfügen. Damit können sie besser von anderen Arten von Abhängigkeiten unterschieden werden.
+
+
+
+**Beispiel mit verpflichtenden Inhalten**
+
+Um es noch einmal zu verdeutlichen: Komponenten sind Bestandteile deren interner Aufbau nicht eindeutig definiert ist. In aller Regel handelt es sich um Bestandteile die intern in weitere Bestandteile zerlegt sein können, nach Außen aber als ein einzelner Bestandteil auftreten. 
+
+Das klingt möglicherweise etwas verwirrend und deshalb soll es am Beispiel eines Kaffeevollautomaten erklärt werden. Dieser mahlt seine Bohnen selbst, verfügt über einen Wassertank, eine Brühgruppe und eine Auffangschale für die gemahlenen Kaffeebohnen. In einem Komponentendiagramm können all diese Bestandteile als Teil des Systems "Kaffeevollautmat" dargestellt werden. Zusätzlich werden ihre Interaktionspunkte und Schnittstellen eingezeichnet. Wichtig ist hierbei, dass die Darstellung nicht zu detailliert sein sollte, weil sie sonst unübersichtlich wird und schnell altert. Daher reicht es oft schon die Rechtecke mit entsprechenden Anmerkungen wie *Component* oder *System* zu versehen und deren Ports über duchgezogene Linien miteinander zu verbinden.
+
+![Beispiel eines Komponentendiagramms](images/Komponentendiagramm-Beispiel.svg)
+
+**Beispiel mit optionalen Inhalten**
+
+Die einfache Darstellung lässt sich zwar in jedem Zeichenprogramm darstellen, ist aber ggf. nicht eindeutig genug. Je nach verfügbarer Symbolbibliothek macht es daher Sinn, auch die Schnittstellen und deren Charakter (angeboten oder benötigt) entsprechend darzustellen. Zusätzlich sollten das Komponentensymbol verwendet werden, damit sofort ersichtlich wird, dass in diesem Diagramm bewusst Details ausgespart wurden. Möchte man dann noch darstellt, dass die Komponenten durchaus eine unterschiedliche Komplexität haben, kann diese durch entsprechende Anmerkungen dargestellt werden. Hierbei werden oft folgende Begriffe verwendet:
+
+- *System* - Eine sehr umfangreiche und komplexe Anordnung die alle weiteren Bestandteile enthält.
+- *Subsystem* - Ebenfalls ein recht umfangreiches Gebilde, dass aber Teil eines umfassenden Systems ist.
+- *Component* - Eine Komponente die in weitere feine Strukturen zerlegt werden kann, dabei aber nicht so komplex wie ein Subsystem oder System ist.
+
+Es können auch weitere Begriffe genutzt werden, die aber sehr stark von den jeweiligen fachlichen und technischen Zusammenhängen bestimmt werden. Dazu zählen beispiwelsweise *Package*, *Module* oder *Assembly*
+
+![Komplexbeispiel eines Komponentendiagramms](images/Komponentendiagramm-Komplexbeispiel.svg)
+
+Je nach darzustellenden Zusammenhängen kann es bei einem Komponentendiagramm auch Sinn ergeben, entsprechende Nutzer und Nutzergruppen einzuzeichnen um darzustellen mit welchen Bestandteilen die *Akteure* direkt interagieren. In diesem Fall wird ein Strichmännchen verwendet.
 ## Klassendiagramm
 
 ## Paketdiagramm
