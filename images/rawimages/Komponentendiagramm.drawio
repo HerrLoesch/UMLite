@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e" pages="3">
     <diagram id="A8txxnmd_eqe3HhGsSbr" name="Beispiel">
-        <mxGraphModel dx="788" dy="862" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1025" dy="862" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="7DdtdedRhiH3oK4WyvWr-0"/>
                 <mxCell id="7DdtdedRhiH3oK4WyvWr-1" parent="7DdtdedRhiH3oK4WyvWr-0"/>
@@ -48,7 +48,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="--35fHNoS3o7pQdWPQj6" name="Darstellungselemente">
-        <mxGraphModel dx="788" dy="862" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="707" dy="594" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -94,11 +94,19 @@
                 <mxCell id="c4cbzYRpzLh5rreta_YC-19" value="angebotene&lt;br&gt;Schnittstelle" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;sketch=1;" parent="1" vertex="1">
                     <mxGeometry x="130" y="180" width="80" height="30" as="geometry"/>
                 </mxCell>
+                <mxCell id="uvnkFaMG3zWGCrgwYWH5-2" style="edgeStyle=none;html=1;dashed=1;endArrow=none;endFill=0;" edge="1" parent="1" source="uvnkFaMG3zWGCrgwYWH5-1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="306.79310344827593" y="214.27586206896558" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="uvnkFaMG3zWGCrgwYWH5-1" value="Port" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=15;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="248" width="86" height="44" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
     <diagram id="F5OqE_GZpEBxVj0D66kr" name="Komplexbeispiel">
-        <mxGraphModel dx="788" dy="862" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="707" dy="594" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="8dKSP0gKcI_-LUn51-ES-0"/>
                 <mxCell id="8dKSP0gKcI_-LUn51-ES-1" parent="8dKSP0gKcI_-LUn51-ES-0"/>
@@ -220,7 +228,7 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="zawLdsEzJvPoMGxvagWJ-0" value="Nutzer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;sketch=1;" parent="8dKSP0gKcI_-LUn51-ES-1" vertex="1">
-                    <mxGeometry x="205" y="370" width="40" height="80" as="geometry"/>
+                    <mxGeometry x="36" y="242.5" width="40" height="80" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
