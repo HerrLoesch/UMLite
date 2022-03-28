@@ -1,5 +1,7 @@
 ![](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)
 
+![](images/logo.png)
+
 # Aufbau
 Im ersten Kapitel dieses Dokuments wird zunächst erläutert was sich hinter UMLite verbigt. Die wichtigsten Kapitel folgen darauf und sind [Wichtige Darstellungselemente](#wichtige-darstellungselemente), [Strukturdiagramme](#strukturdiagramme) und [Verhaltensdiagramme](#verhaltensdiagramme). Im letzten Kapitel wird das Ganze um Anmerkungen und Tipps erweitert, die beim Einsatz von UMLite helfen können. In jedem Kapitel werden zunächst zwingende Festlegungen beschrieben, bevor diese dann um optionale Dinge erweitert werden. Auf diese Weise sollte es möglich sein UMLite leichter in konkreten Situationen und mit unterschiedlichen Werkzeugen zu verwenden.
 
