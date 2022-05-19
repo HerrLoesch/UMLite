@@ -61,7 +61,7 @@ Bausteine allein machen noch keine Software, sie müssen auch miteinander intera
 2. Ergibt sich aus der Beziehung eine direkte Abhängigkeit eines Bestandteils zu einem anderen, wird dies durch einen **Pfeil mit offener Spitze** dargestellt. Abhängigkeit bedeutet dabei, dass der Bestandteil von dem der Pfeil ausgeht den Bestandteil braucht auf den der Pfeil zeigt.
 3. Die **geschlossene Spitze** ist ein Spezialfall der im Kapitel [Strukturdiagramme](#strukturdiagramme) näher erläutert wird. Er bedeutet, dass der Baustein von dem der Pfeil ausgeht spezialisierter ist, als der auf den der Pfeil zeigt. Umgekehrt ist der Baustein auf den der Pfeil zeigt damit allgemeiner formuliert als der von dem der Pfeil ausgeht.
 
-**Funcfact**: Die vielen verschiedenen Arten von Pfeilen in der UML waren einer der Gründe warum UMLite formuliert wurde.
+**Funfact**: Die vielen verschiedenen Arten von Pfeilen in der UML waren einer der Gründe warum UMLite formuliert wurde.
 
 **Optional**
 
@@ -160,26 +160,48 @@ Interessant für das Paketdiagramm sind vorallem Abhängigkeiten zu plattformspe
 
 # Verhaltensdiagramme
 
-**Grundsätzlicher Aufbau**
-
-**Beispiel mit verpflichtenden Inhalten**
-
-**Beispiel mit optionalen Inhalten**
-
 ## Aktivitätsdiagramm
 
 **Grundsätzlicher Aufbau**
 
+Das Aktivitätendiagramm besteht im Kern aus einem Anfangsknoten, einem Endknoten, sowie aus einer Folge beliebiger Knoten dazwischen. Diese Folge von Knoten repräsentiert einen geschlossenen Ablauf von Aktivitäten. Jeder einzelne Knoten ist eine Entscheidung während des Programmablaufes.
+
+Dabei kann ein Prozess sich in mehrere Unterprozesse aufteilen (fork). Über eine Verbindung (join)
+können die Unterprozesse ohne zeitliche Abhängigkeit wieder zusammengeführt werden.
+
+Möchte man Prozesse, die zeitlich voneinander abhängen, so wählt man die Parallelisierung. Bei einer Parallelisierung starten alle parallel verlaufenden Prozesse gleichzeitig.
+Als Gegenstück dazu präsentiert sich die Synchronisierung. Diese stellt sicher, dass auf jeden einzelnen parallel verlaufenden Prozess gewartet wird. Der Ablauf wird erst fortgesetzt, wenn alle Unterprozesse fertig sind.
+
+Mit Hilfe des Aktivitätendiagramm ist es möglich, einen Arbeitsfluss abstrahiert darzustellen. Aus dieser Darstellung lässt sich anschließend eine vereinfachte Struktur für ein Programm ableiten. Die Hauptprozesse und deren Abfolge sind leicht erkennbar.
+
 **Beispiel mit verpflichtenden Inhalten**
 
+![Beispiel eines Aktivitätsdiagramms](images/Aktivitätsdiagramm-Beispiel.svg)
+
 **Beispiel mit optionalen Inhalten**
+
+:raised_hand:
 
 ## Sequenzdiagramm
 
 **Grundsätzlicher Aufbau**
 
+Mit Hilfe der Sequenzdiagramme werden Objekte und deren zeitliche Interaktionen dargestellt. Dabei hält jedes Objekt eine sogenannte Lebenslinie. Mit Hilfe von Nachrichten werden entlang der Lebenslinie Interaktionen der Objekte dargestellt.
+
+Nachrichten werden als durchgezogene Pfeile, zwischen zwei Blöcken die jeweils auf einer Lebenslinie liegen, gezeichnet. Diese Nachrichten enthalten zumeist eine Methodensignatur. Wenn das Objekt ein Ergebnis zurückgibt, so wird dies mit Hilfe eines gestrichelten Pfeils dargestellt.
+
+Mit Hilfe eines Rechtecks, sowie einer Erklärung, ist es Möglich z.B. Schleifen innerhalb einer Sequenz darzustellen. Dabei wird die Sequenz innerhalb des Rechtecks getrennt von der umschließenden Sequenz betrachtet bzw. ausgeführt.
+
+Sehr beliebt ist das Sequenzdiagramm bei der Darstellung von Netzwerkkommunikation bzw. der Darstellung von Protokollen ([s. Beispiel TCP/IP](https://de.wikipedia.org/wiki/Transmission_Control_Protocol#Verbindungsaufbau)).
+
 **Beispiel mit verpflichtenden Inhalten**
+
+![Beispiel eines Aktivitätsdiagramms](images/Sequenzdiagramm-Beispiel.svg)
 
 **Beispiel mit optionalen Inhalten**
 
+:raised_hand:
+
 # Anmerkungen & Tipps
+
+#TODO
