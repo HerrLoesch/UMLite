@@ -129,7 +129,7 @@ Klassendiagramme bieten eine sehr gute Möglichkeit, um das zugrunde liegende Mo
 
 ![Beispiel eines Komponentendiagramms](images/Klassendiagramm-Beispiel.svg)
 
-**Beispiel mit verpflichtenden Inhalten**
+**Beispiel**
 
 Während in [Komponentendiagrammen](#Komponentendiagramm) bereitgestellte und implementierte Interfaces in der so genannten [lollipop-Notation](<https://de.wikipedia.org/wiki/Schnittstelle_(UML)>) dargestellt werden, so können Details nun im Klassendiagramm betrachtet werden. In dem Beispiel ist ein weniger wichtiges, wenig detailliert beschriebenes Interface gezeigt, sowie ein Interface von größerer Bedeutung und Beschreibung mit Methoden und Eigenschaften.
 
@@ -138,10 +138,6 @@ Interfaces, so genannte Programmschnittstellen oder Vereinbarungen über eine be
 Ebenfalls als vereinbart gilt, dass Eigenschaften grundsätzlich nicht nach außen, also außerhalb der Klasse, sichtbar sind. Im Gegensatz dazu werden Methoden immer als public, also öffentlich sichtbar, angenommen.
 
 Eine weitere Besonderheit des Klassendiagramms ist die Darstellung von Mengenverhältnissen zwischen zwei abhängigen Klassen. Zu beachten ist die Position der Mengenverhältnisse. Im Beispiel ist eine gegenseitige oder unbestimmte Abhängigkeit gegeben. Bei einer gerichteten Abhängigkeit steht das Mengenverhältnis am Pfeilende also an der Pfeilspitze.
-
-**Beispiel mit optionalen Inhalten**
-
-:raised_hand:
 
 ## Paketdiagramm
 
@@ -152,11 +148,9 @@ Die Summe aller logisch zusammengehöriger Komponenten bildet ein so genanntes M
 
 Interessant für das Paketdiagramm sind vorallem Abhängigkeiten zu plattformspezifischen Systembibliotheken oder oft gebrauchte Drittparteienbibliotheken wie z.B. das beliebte Paket [Json.Net von Newtonsoft](https://www.newtonsoft.com/json), zum De- / Serialisieren von JSON-Dateien in der Programmiersprache C#, da die .Net eigene Implementierung umständlich und teilweise unzureichend ist.
 
-**Beispiel mit verpflichtenden Inhalten**
+**Beispiel**
 
 ![Beispiel eines Paketdiagramms](images/Paketdiagramm-Beispiel.svg)
-
-**Beispiel mit optionalen Inhalten**
 
 # Verhaltensdiagramme
 
@@ -174,13 +168,9 @@ Als Gegenstück dazu präsentiert sich die Synchronisierung. Diese stellt sicher
 
 Mit Hilfe des Aktivitätendiagramm ist es möglich, einen Arbeitsfluss abstrahiert darzustellen. Aus dieser Darstellung lässt sich anschließend eine vereinfachte Struktur für ein Programm ableiten. Die Hauptprozesse und deren Abfolge sind leicht erkennbar.
 
-**Beispiel mit verpflichtenden Inhalten**
+**Beispiel**
 
 ![Beispiel eines Aktivitätsdiagramms](images/Aktivitätsdiagramm-Beispiel.svg)
-
-**Beispiel mit optionalen Inhalten**
-
-:raised_hand:
 
 ## Sequenzdiagramm
 
@@ -194,13 +184,10 @@ Mit Hilfe eines Rechtecks, sowie einer Erklärung, ist es Möglich z.B. Schleife
 
 Sehr beliebt ist das Sequenzdiagramm bei der Darstellung von Netzwerkkommunikation bzw. der Darstellung von Protokollen ([s. Beispiel TCP/IP](https://de.wikipedia.org/wiki/Transmission_Control_Protocol#Verbindungsaufbau)).
 
-**Beispiel mit verpflichtenden Inhalten**
+**Beispiel**
 
 ![Beispiel eines Aktivitätsdiagramms](images/Sequenzdiagramm-Beispiel.svg)
 
-**Beispiel mit optionalen Inhalten**
-
-:raised_hand:
 
 # Anmerkungen & Tipps
 
