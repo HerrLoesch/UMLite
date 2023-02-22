@@ -148,8 +148,6 @@ Die Summe aller logisch zusammengehöriger Komponenten bildet ein so genanntes M
 
 Interessant für das Paketdiagramm sind vorallem Abhängigkeiten zu plattformspezifischen Systembibliotheken oder oft gebrauchte Drittparteienbibliotheken wie z.B. das beliebte Paket [Json.Net von Newtonsoft](https://www.newtonsoft.com/json), zum De- / Serialisieren von JSON-Dateien in der Programmiersprache C#, da die .Net eigene Implementierung umständlich und teilweise unzureichend ist.
 
-**Beispiel**
-
 ![Beispiel eines Paketdiagramms](images/Paketdiagramm-Beispiel.svg)
 
 # Verhaltensdiagramme
@@ -168,8 +166,6 @@ Als Gegenstück dazu präsentiert sich die Synchronisierung. Diese stellt sicher
 
 Mit Hilfe des Aktivitätendiagramm ist es möglich, einen Arbeitsfluss abstrahiert darzustellen. Aus dieser Darstellung lässt sich anschließend eine vereinfachte Struktur für ein Programm ableiten. Die Hauptprozesse und deren Abfolge sind leicht erkennbar.
 
-**Beispiel**
-
 ![Beispiel eines Aktivitätsdiagramms](images/Aktivitätsdiagramm-Beispiel.svg)
 
 ## Sequenzdiagramm
@@ -184,11 +180,4 @@ Mit Hilfe eines Rechtecks, sowie einer Erklärung, ist es Möglich z.B. Schleife
 
 Sehr beliebt ist das Sequenzdiagramm bei der Darstellung von Netzwerkkommunikation bzw. der Darstellung von Protokollen ([s. Beispiel TCP/IP](https://de.wikipedia.org/wiki/Transmission_Control_Protocol#Verbindungsaufbau)).
 
-**Beispiel**
-
 ![Beispiel eines Aktivitätsdiagramms](images/Sequenzdiagramm-Beispiel.svg)
-
-
-# Anmerkungen & Tipps
-
-#TODO
