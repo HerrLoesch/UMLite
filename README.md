@@ -141,8 +141,6 @@ Eine weitere Besonderheit des Klassendiagramms ist die Darstellung von Mengenver
 
 ## Paketdiagramm
 
-**Grundsätzlicher Aufbau**
-
 Ein Paketdiagramm zeigt im einfachsten Fall die gegebenen Abhängigkeiten zwischen zwei Paketen bzw. Modulen. Jede größere Software besteht aus Klassen. Die logische oder domänenspezifische Zusammengehörigkeit von Klassen wird als Komponente bezeichnet (s. [Komponentendiagrammen](#Komponentendiagramm)).
 Die Summe aller logisch zusammengehöriger Komponenten bildet ein so genanntes Modul.
 
@@ -153,8 +151,6 @@ Interessant für das Paketdiagramm sind vorallem Abhängigkeiten zu plattformspe
 # Verhaltensdiagramme
 
 ## Aktivitätsdiagramm
-
-**Grundsätzlicher Aufbau**
 
 Das Aktivitätendiagramm besteht im Kern aus einem Anfangsknoten, einem Endknoten, sowie aus einer Folge beliebiger Knoten dazwischen. Diese Folge von Knoten repräsentiert einen geschlossenen Ablauf von Aktivitäten. Jeder einzelne Knoten ist eine Entscheidung während des Programmablaufes.
 
@@ -169,8 +165,6 @@ Mit Hilfe des Aktivitätendiagramm ist es möglich, einen Arbeitsfluss abstrahie
 ![Beispiel eines Aktivitätsdiagramms](images/Aktivitätsdiagramm-Beispiel.svg)
 
 ## Sequenzdiagramm
-
-**Grundsätzlicher Aufbau**
 
 Mit Hilfe der Sequenzdiagramme werden Objekte und deren zeitliche Interaktionen dargestellt. Dabei hält jedes Objekt eine sogenannte Lebenslinie. Mit Hilfe von Nachrichten werden entlang der Lebenslinie Interaktionen der Objekte dargestellt.
 
