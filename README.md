@@ -39,9 +39,9 @@ Außerdem wird darauf geachtet, dass alle Beschreibungen möglichst einfachen un
 
 Um die Komplexität zu verringern, werden nachfolgend vorallem die Diagramme beschrieben, die am häufigsten in der Praxis anzutreffen sind oder als besonders nützlich gelten. Teilweise findet auch absichtlich eine Vermischung von Diagrammtypen der UML statt.
 
-# Wichtige Darstellungselemente
+# [Wichtige Darstellungselemente](#Darstellungselemente)
 
-## Bausteine
+## [Bausteine](#Bausteine)
 
 Mit UMLite wird dargestellt wie Software aufgebaut ist und wie ihre einzelnen Bausteine interagieren. Bausteine sind dabei alle Bestandteil die näher beschrieben werden sollen. Sie werden als _Rechtecke_ dargestellt. Um sie näher zu beschreiben, können Anmerkungen über dem Namen der Bausteine eingetragen werden. Diese Anmerkungen sind von spitzen Doppelklammern umgeben um sie vom Namen abzuheben.
 
@@ -49,7 +49,7 @@ Mit UMLite wird dargestellt wie Software aufgebaut ist und wie ihre einzelnen Ba
 
 Im Beispiel haben wir es mit unterschiedlichen Arten von Bausteinen zu tun. Es gibt beispielsweise die Kaffeemaschine, die ein komplettes System sein kann und es gibt die Komponente Brüheinheit, die in der Kaffeemaschine das Aufbrühen des Kaffees übernimmt. Nähere Erläuterungen zu den Anmerkungen und den unterschiedlichen Arten von Bausteinen finden sich im Kapitel [Strukturdiagramme](#strukturdiagramme).
 
-## Beziehungen
+## [Beziehungen](#Beziehungen)
 
 **Verpflichtend**
 
