@@ -19,7 +19,6 @@ Im ersten Kapitel dieses Dokuments wird zunächst erläutert was sich hinter UML
 - [Verhaltensdiagramme](#verhaltensdiagramme)
   - [Aktivitätsdiagramm](#aktivitätsdiagramm)
   - [Sequenzdiagramm](#sequenzdiagramm)
-- [Anmerkungen & Tipps](#anmerkungen--tipps)
 
 # Motivation
 
@@ -144,7 +143,9 @@ Eine weitere Besonderheit des Klassendiagramms ist die Darstellung von Mengenver
 Ein Paketdiagramm zeigt im einfachsten Fall die gegebenen Abhängigkeiten zwischen zwei Paketen bzw. Modulen. Jede größere Software besteht aus Klassen. Die logische oder domänenspezifische Zusammengehörigkeit von Klassen wird als Komponente bezeichnet (s. [Komponentendiagrammen](#Komponentendiagramm)).
 Die Summe aller logisch zusammengehöriger Komponenten bildet ein so genanntes Modul.
 
-Interessant für das Paketdiagramm sind vorallem Abhängigkeiten zu plattformspezifischen Systembibliotheken oder oft gebrauchte Drittparteienbibliotheken wie z.B. das beliebte Paket [Json.Net von Newtonsoft](https://www.newtonsoft.com/json), zum De- / Serialisieren von JSON-Dateien in der Programmiersprache C#, da die .Net eigene Implementierung umständlich und teilweise unzureichend ist.
+![Bestandteile eines Paketdiagramms](images/Paketdiagramm-Bestandteile.svg)
+
+Interessant für das Paketdiagramm sind vor allem Abhängigkeiten zu plattformspezifischen Systembibliotheken oder oft gebrauchte Drittparteienbibliotheken, aber auch der generelle Aufbau eines Verzeichnisses oder Code Abhängigkeiten über Repositories hinweg.
 
 ![Beispiel eines Paketdiagramms](images/Paketdiagramm-Beispiel.svg)
 
